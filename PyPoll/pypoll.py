@@ -7,8 +7,9 @@ elections_data = os.path.join("..", "Instructions", "election_data.csv")
 
 #having variables for the candidates
 total_votes = 0 
-k_votes = 0
+
 l_votes = 0
+k_votes = 0
 c_votes = 0
 o_votes = 0
 
@@ -23,12 +24,12 @@ with open(elections_data,newline="") as elections:
         #add the khan, correy and o'tooley votes
         if row[2] == "Khan":
             k_votes +=1
-        elif row[2] == "Correy":
-            c_votes +=1
-        elif row[2] == "Li": 
-            l_votes +=1
         elif row[2] == "O'Tooley":
             o_votes +=1
+        elif row[2] == "Li": 
+            l_votes +=1
+        elif row[2] == "Correy":
+            c_votes +=1
 
  # To find the winner we want to make a dictionary out of the two lists
  #first is the candidates and the second is the votes
@@ -42,9 +43,9 @@ election_candidates_and_votes = dict(zip(candidates,votes))
 winner = max(election_candidates_and_votes, key=election_candidates_and_votes.get)
 
 # percents of each candidate
-k_percent = (k_votes/total_votes) *100
+k_percent = (k_votes/total_votes) * 100
 c_percent = (c_votes/total_votes) * 100
-l_percent = (l_votes/total_votes)* 100
+l_percent = (l_votes/total_votes) * 100
 o_percent = (o_votes/total_votes) * 100
 
 
@@ -66,7 +67,7 @@ print(f"-" * 20)
 output_file = "./Election_Results_Summary.txt"
 with open(output_file,"w") as file:
 
-# Write methods to print to Elections_Results_Summary 
+# Write methods to print to Elections_Results_Summary.txt 
     file.write(f"Election Results\n")
     file.write(f"-" * 30)
     file.write("\n")
