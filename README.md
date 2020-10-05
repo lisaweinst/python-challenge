@@ -1,6 +1,8 @@
 # python-challenge
-PyBank Folder
-In this challenge, I created a Python script for analyze financial records of a company. I was given a set of financial data called budget_data.csv. The dataset is composed of two columns: Date and Profit/Losses. (Thankfully, your company has rather lax standards for accounting so the records are simple.)
+# PyBank Folder
+
+
+In this challenge, I created a Python script for analyze financial records of a company. I was given a set of financial data called budget_data.csv. The dataset is composed of two columns: Date and Profit/Losses. 
 
 
 The Python script analyzes the records to calculate each of the following:
@@ -20,7 +22,7 @@ The greatest increase in profits (date and amount) over the entire period
 
 The greatest decrease in losses (date and amount) over the entire period
 
-PyPoll Folder
+# PyPoll Folder
 This challnge looks at a small, rural town modernize its vote counting process.
 
 
